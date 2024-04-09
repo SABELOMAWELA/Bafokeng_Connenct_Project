@@ -1,0 +1,61 @@
+<div id="reg-card" class="card card-plain">
+    <div class="card-header pb-0 text-left bg-transparent">
+        <div class="form-logo-side">
+            <img src="./assets/img/bc-logo.png" alt="Bafokeng Connect Logo">
+        </div>
+        <h4 class="font-weight-semibold">Basic information</h4>
+        <p class="mb-0 mt-3">Enter your birthday and gender</p>
+    </div>
+    <div class="card-body mt-3">
+        <form id="auth" class="form-floating" role="form">
+            <div class="form-body">
+                <div class="birthday-inputs d-flex flex-row">
+                    <div class="form-group">
+                        <input id="month" type="text" class="form-control form-control-lg" list="monthList" autocomplete="off" spellcheck="false" tabindex="0" aria-label="Month" name="month" value="" aria-disabled="false" data-initial-value="">
+                        
+                        <datalist id="monthList">
+                            <option value="January" class=""></option>
+                            <option value="February" class=""></option>
+                            <option value="March" class=""></option>
+                            <option value="April" class=""></option>
+                            <option value="May" class=""></option>
+                            <option value="June" class=""></option>
+                            <option value="July" class=""></option>
+                            <option value="August" class=""></option>
+                            <option value="September" class=""></option>
+                            <option value="October" class=""></option>
+                            <option value="November" class=""></option>
+                            <option value="December" class=""></option>
+                        </datalist>
+
+                        <label for="month" aria-hidden="true">Month</label>
+                        <div class="form-group-alert-text"></div>
+                    </div>
+                    <div class="form-group">
+                        <input id="day" type="tel" class="form-control form-control-lg" autocomplete="off" spellcheck="false" tabindex="0" aria-label="Day" name="day" value="" aria-disabled="false" data-initial-value="">
+                        <label for="day" aria-hidden="true">Day</label>
+                    </div>
+                    <div class="form-group">
+                        <input id="year" type="tel" class="form-control form-control-lg" autocomplete="off" spellcheck="false" tabindex="0" aria-label="Year" name="year" value="" aria-disabled="false" data-initial-value="">
+                        <label for="year" aria-hidden="true">Year</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input id="gender" type="text" class="form-control form-control-lg" list="genderList" autocomplete="off" spellcheck="false" tabindex="0" aria-label="Gender" name="gender" value="" aria-disabled="false" data-initial-value="">
+                    
+                    <datalist id="genderList">
+                        <option value="Male" class=""></option>
+                        <option value="Female" class=""></option>
+                        <option value="Rather not say" class=""></option>
+                        <option value="Custom" class=""></option>
+                    </datalist>
+
+                    <label for="gender" aria-hidden="true">Gender</label>
+                </div>
+            </div>
+            <div class="d-flex gap-4 justify-content-end">
+                <button id="reg-bdaygender" type="button" class="btn btn-lg bg-gradient-primary btn-lg mt-4 mb-0">Next</button>
+            </div>
+        </form>
+    </div>
+</div>
